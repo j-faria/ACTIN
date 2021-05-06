@@ -49,20 +49,23 @@ def init():
     err['ERROR'] = "*** ERROR:"
 
 
-def preamble(version_file):
+def preamble(version_file, verbose=False):
 
     __author__ = "Joao Gomes da Silva"
 
     try:
         with open(version_file, 'r') as file:
             version = file.read().splitlines()[0]
-        print("\nACTIN {}".format(version))
+        if verbose:
+            print("\nACTIN {}".format(version))
     except:
-        print("*** WARNING | Unable to read 'VERSION' file.")
+        if verbose:
+            print("*** WARNING | Unable to read 'VERSION' file.")
         version = "Unknown"
 
-    print("Instituto de Astrofisica e Ciencias do Espaco")
-    print("Centro de Astrofisica da Universidade do Porto")
-    print("Author:", __author__+ ",", "Joao.Silva@astro.up.pt")
+    if verbose:
+        print("Instituto de Astrofisica e Ciencias do Espaco")
+        print("Centro de Astrofisica da Universidade do Porto")
+        print("Author:", __author__ + ",", "Joao.Silva@astro.up.pt")
 
     return version

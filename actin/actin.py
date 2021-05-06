@@ -344,4 +344,5 @@ def main():
           save_plots  = args.save_plots)
 
 if __name__ == "__main__":
+    ac_set.preamble(version_file, verbose=True)
     main()
