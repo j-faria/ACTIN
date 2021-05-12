@@ -14,7 +14,7 @@ import glob
 
 from matplotlib import pylab as plt
 
-import ac_settings as ac_set
+from . import ac_settings as ac_set
 
 
 def compute_flux(wave, flux, blaze, noise, ln_ctr, ln_win, bandtype, frac=True, test_plot=False):

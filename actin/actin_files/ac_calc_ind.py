@@ -8,8 +8,8 @@ import os, sys ### test
 import numpy as np
 
 # ACTIN FILES
-import ac_settings as ac_set
-import ac_get_win
+from . import ac_settings as ac_set
+from . import ac_get_win
 
 
 def check_lines(wave, sel_lines, verb=False):

@@ -13,8 +13,8 @@ import astropy.io.fits as pyfits
 import matplotlib.pylab as plt
 
 # ACTIN modules:
-import ac_tools
-import ac_settings as ac_set
+from . import ac_tools
+from . import ac_settings as ac_set
 
 
 def check_for_calib_files(e2ds_header, file_type, folder, dif_time_max=1.0, plot_spec=False):

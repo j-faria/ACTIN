@@ -8,8 +8,8 @@ import sys, os
 import numpy as np
 import pylab as plt
 
-import ac_settings as ac_set
-import ac_tools
+from . import ac_settings as ac_set
+from . import ac_tools
 
 
 # IMPORTANT: all indices names must start with "I_" in config file

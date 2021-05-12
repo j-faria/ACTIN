@@ -8,8 +8,8 @@ import sys, os
 import numpy as np
 from matplotlib import pylab as plt
 
-import ac_tools
-import ac_settings as ac_set
+from . import ac_tools
+from . import ac_settings as ac_set
 
 
 def sel_order(wave_2d, ln_ctr, ln_win, file_type):

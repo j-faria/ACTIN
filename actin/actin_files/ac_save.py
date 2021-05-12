@@ -11,8 +11,8 @@ import numpy as np
 import datetime
 
 # ACTIN FILES:
-import ac_tools
-import ac_settings as ac_set
+from . import ac_tools
+from . import ac_settings as ac_set
 
 
 def check_duplicate(obj, date, instr, file_type, out_dir):
